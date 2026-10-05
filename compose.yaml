@@ -76,18 +76,3 @@ networks:
   kind:
     external: true
 
-# wget https://github.com/aquasecurity/trivy/releases/download/v0.74.0/trivy_0.74.0_Linux-64bit.deb
-
-# # Install it locally
-# dpkg -i trivy_0.74.0_Linux-64bit.deb
-
-
-
-
-# FROM maven:3.9.16
-# COPY . /app
-# WORKDIR /app
-# # RUN mvn package
-# RUN mvn -B -ntp package
-# EXPOSE 8050
-# CMD ["java", "-jar", "target/demo-java-app-1.0-SNAPSHOT.jar"]
