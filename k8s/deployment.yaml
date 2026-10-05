@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mvn-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: mvn-app
+  template:
+    metadata:
+      labels:
+        app: mvn-app
+    spec:
+      containers:
+      - name: mvn-app
+        image: localhost:5001/mvn-app:latest
+        ports:
+        - containerPort: 8050
